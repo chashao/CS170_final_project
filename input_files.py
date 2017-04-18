@@ -3,9 +3,6 @@ import random
 import string
 
 
-
-
-
 with open('problem1.in', 'w+') as f1:
 
 	P = random.randint(1, 2**8)
@@ -22,8 +19,8 @@ with open('problem1.in', 'w+') as f1:
 
 	i = 0
 	while i < N:
-		f1.write(''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(6)) + '; ' + str(random.randint(1, N)) 
-			+ '; '+ str(random.randint(1, P)) + '; '+ str(random.randint(1, M)) + '; ' + str(random.randint(1, R)) + '\n')
+		f1.write(''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(6)) + '; ' + str(random.randint(0, N - 1)) 
+			+ '; '+ str(random.randint(0, P - 1)) + '; '+ str(random.randint(0, M - 1)) + '; ' + str(random.randint(0, R - 1)) + '\n')
 		i += 1
 	j = 0
 	while j < C:
@@ -47,8 +44,8 @@ with open('problem2.in', 'w+') as f2:
 
 	i = 0
 	while i < N:
-		f2.write(''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(9)) + '; ' + str(random.randint(1, N)) 
-			+ '; '+ str(random.randint(1, P)) + '; '+ str(random.randint(1, M)) + '; ' + str(random.randint(1, R)) + '\n')
+		f2.write(''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(9)) + '; ' + str(random.randint(0, N - 1)) 
+			+ '; '+ str(random.randint(0, P - 1)) + '; '+ str(random.randint(0, M - 1)) + '; ' + str(random.randint(0, R - 1)) + '\n')
 		i += 1
 	j = 0
 	while j < C:
@@ -75,8 +72,8 @@ with open('problem3.in', 'w+') as f3:
 
 	i = 0
 	while i < N:
-		f3.write(''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(9)) + '; ' + str(random.randint(1, N)) 
-			+ '; '+ str(random.randint(1, P)) + '; '+ str(random.randint(1, M)) + '; ' + str(random.randint(1, R)) + '\n')
+		f3.write(''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(9)) + '; ' + str(random.randint(0, N - 1)) 
+			+ '; '+ str(random.randint(0, P - 1)) + '; '+ str(random.randint(0, M - 1)) + '; ' + str(random.randint(0, R - 1)) + '\n')
 		i += 1
 	j = 0
 	while j < C:
