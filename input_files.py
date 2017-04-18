@@ -25,7 +25,7 @@ with open('problem1.in', 'w+') as f1:
 	j = 0
 	while j < C:
 		f1.write(str(random.sample(range(N), random.randint(2, N)))[1: -1] + '\n')
-		j += 11
+		j += 1
 
 with open('problem2.in', 'w+') as f2:
 
